@@ -25,5 +25,10 @@ pipeline {
                 build 'ProjectTests1'
             }
         }
+        stage('Run second project') {
+            steps {
+                build 'ProjectTests2'
+            }
+        }
     }
 }
