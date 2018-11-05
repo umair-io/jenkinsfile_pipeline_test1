@@ -21,7 +21,7 @@ pipeline {
             }
         }
         stage('Run first project') {
-            step {
+            steps {
                 build 'ProjectTests1'
             }
         }
