@@ -20,5 +20,10 @@ pipeline {
                 sleep 20
             }
         }
+        stage('Run first project') {
+            step {
+                build 'ProjectTests1'
+            }
+        }
     }
 }
